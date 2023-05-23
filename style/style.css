@@ -251,8 +251,6 @@ header .content .timer-dad .timer #countdown .colon {
   padding: 8px;
 }
 #productContainer .cart .product-image {
-  width: 140px;
-  height: 142px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -288,8 +286,30 @@ header .content .timer-dad .timer #countdown .colon {
   font-weight: 400;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 380px) {
+  #productContainer {
+    gap: 13px;
+  }
   #productContainer .cart {
+    width: 100px;
+  }
+  #productContainer .cart .product-image {
+    width: 100px;
+  }
+  #productContainer .cart .prices .final-price {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  #productContainer .cart .prices .base-price {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 450px) and (min-width: 380px) {
+  #productContainer .cart {
+    width: 140px;
+  }
+  #productContainer .cart .product-image {
     width: 140px;
   }
 }
