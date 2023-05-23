@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie - Michał Lipka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <div class="promotion">
+                <img src="img/watch.webp" alt="przeźroczysty zegar z czarnymi elementami" class="watch">
+                <h1 class="text-promotion"><span class="first">Gorąca</span><span class="two">promocja</span></h1>
+                <p class="balloon"><strong>Właśnie</strong> trwa!</p>
+                <div class="delivery">
+                    <img src="img/truck.webp" alt="ikonka furgonetki kurierskiej" class="truck">
+                    <p class="under-truck">dostawa</br>gratis!</p>
+                </div>
+            </div>
+            <div class="discount">
+                <p class="discount-text">Rabaty nawet do</p>
+                <p class="amount">80<span class="percent">%</span></p>
+            </div>
+            <div class="timer-dad">
+                <div class="timer">
+                    <p class="timer-header">Do końca pozostało:</p>
+                    <div id="countdown">
+                        <p id="days"></p>
+                        <span class="colon">:</span>
+                        <p id="hours"></p>
+                        <span class="colon">:</span>
+                        <p id="minutes"></p>
+                        <span class="colon">:</span>
+                        <p id="seconds"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="options-and-info">
+        <div class="underheader">
+            <div class="actually-product">
+                <img src="img/alert-clock.webp" alt="mała ikonka zegara" class="actually-product-img">
+                <p class="actually-product-text">Produkty na godzinie <strong>10:00</strong></p>
+            </div>
+            <div class="info">
+                <img src="img/alert-circle.webp" alt="mała ikonka oznaczająca ważną informację" class="info-img">
+                <p class="info-text">Akcja “Gorąca promocja” nie łączy się z innymi promocjami</p>
+            </div>
+        </div>
+
+        <div class="options">
+            <label for="productNumber">Ilość produktów:</label>
+            <select id="productNumber" onchange="displayProducts()">
+                <option value="2">2</option>
+                <option value="4" selected>4</option>
+                <option value="8">8</option>
+            </select>
+        </div>
+    </div>
+
+    <section id="productContainer"></section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
